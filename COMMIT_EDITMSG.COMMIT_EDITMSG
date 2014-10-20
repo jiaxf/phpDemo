@@ -1,0 +1,43 @@
+add test file
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/test3.php b/test3.php
+new file mode 100644
+index 0000000..5c11ecb
+--- /dev/null
++++ b/test3.php
+@@ -0,0 +1,30 @@
++<?php 
++	$car = array(1,2,3);
++	echo(var_dump($car));
++
++?>
++
++<?php 
++	class car{
++		var $color;
++		function car($color ="green"){
++			$this->color = $color;
++		}
++
++		function what_color(){
++			return $this->color;
++		}
++	}
++	function print_vars($obj) {
++	   foreach (get_object_vars($obj) as $prop => $val) {
++	     echo "\t$prop = $val\n";
++	   }
++	}
++
++	// instantiate one object
++	$herbie = new Car("white");
++
++	// show herbie properties
++	echo "\herbie: Properties\n";
++	print_vars($herbie);
++?>
+\ No newline at end of file
